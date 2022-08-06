@@ -1,0 +1,202 @@
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.challengeOuter{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.challengeSection{
+    /* margin: 24px auto 0 auto; */
+    margin: 60px 0 0;
+    text-align: center;
+    display: flex;
+    padding: 0px 156px;
+    flex: 1;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+/* .challengeHeading{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 48px;
+} */
+.challengeText{
+    padding: 0 24px;
+}
+.readyBtnActive{
+    /* margin-top: 24px; */
+    padding: 18px;
+}
+.readyBtnActive:hover{
+    cursor: pointer;
+    transform: translateY(1px);
+}
+.readyBtnInactive{
+    cursor: not-allowed;
+    padding: 18px;
+}
+.challengeSection .readyToolTip{
+    visibility: hidden;
+    margin-top: 16px;
+    color: #19b648;
+    /* position: absolute;
+    top: 272px;
+    left: 692px;
+    z-index: 2; */
+    font-weight: 600;
+}
+.readyToolTipAct{
+    visibility: visible;
+    margin-top: 16px;
+    /* position: absolute;
+    top: 274px;
+    left: 692px;
+    z-index: 2; */
+    font-weight: 600;
+    color: #19b648;
+}
+.clickBtnInactive{
+    padding: 18px;
+    margin: 24px 0;
+    background-color: rgb(226, 42, 42);
+    color: #fff;
+    cursor: not-allowed;
+}
+.clickBtnActive{
+    padding: 18px;
+    margin: 24px 0;
+    background-color: #19b648;
+    color: #000;
+    cursor: pointer;
+}
+.clickBtnActive:active, .clickBtnActive:focus, .clickBtnActive:active:focus{
+    padding: 18px;
+    margin: 24px 0;
+    background-color: rgb(25, 182, 72);
+    color: #000;
+    cursor: pointer;
+}
+.challengeRestartActive{
+    margin-top: 24px;
+    padding: 18px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+/* .challengeRestart:hover{
+    cursor: pointer;
+} */
+.challengeTimeValue .challengeValue{
+    margin-top: 8px;
+}
+.challengeRestartInactive{
+    margin-top: 24px;
+    padding: 18px;
+    background-color: #ddd;
+    border: none;
+    cursor: not-allowed;
+}
+/* counter.js */
+.active{
+    color: #f5de0c;
+}
+.highestScore{
+    margin-top: 60px;
+    min-width: 200px;
+    /* position: absolute;
+    top: 218px;
+    left: 85%; */
+}.challengeInner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.setTimer{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    margin-top: 60px;
+    /* position: absolute;
+    top: 239px;
+    left: 32px; */
+}
+.setTimer h4{
+    text-align: center;
+}
+.setTimerActive{
+    padding: 18px;
+}
+.setTimerActive:hover{
+    cursor: pointer;
+}
+.setTimerInactive{
+    padding: 18px;
+    cursor: not-allowed;
+}
+
+/* loader.js */
+.loaderContainer{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.loaderContainer img{
+    max-width: 372px;
+}
+
+
+@media only screen and (max-width:660px){
+    .challengeInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .challengeSection {
+        margin-top: 40px;
+        padding: 0;
+    }
+    .challengeSection .readyToolTip{
+        display: none;
+    }
+    .readyToolTipAct{
+        display: none;
+    }
+    .highestScore{
+        margin-top: 16px;
+        position: initial;
+        text-align: center;
+    }
+    .setTimer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: initial;
+        min-width: 200px;
+        margin-top: 16px;
+        background-color: #efefef;
+    }
+    .setTimer h4{
+        margin: 8px 0;
+    }
+    .setTimerActive{
+        border: none;
+        width: 55px;
+    }
+}
+
+
+#sl li{
+    display: none;
+}

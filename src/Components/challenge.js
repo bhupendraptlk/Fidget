@@ -13,12 +13,6 @@ const Challenge = ()=>{
     setHighest(value);
   }
 
-  // useEffect(() => {
-  //     setTimeout(() => {
-  //       sec < 10 ? setSec(sec + 1) : ( setSec(sec) )
-  //     }, 1000);
-  // },[notAllowed]);
-
   const challengeAccepted = ()=>{
     setTimeout(() => {
       setNotAllowed(false);
@@ -46,7 +40,6 @@ const Challenge = ()=>{
   const removeToolTip = () =>{
     (flag && notAllowed) ? setFlag(false) : setFlag((flag)=>flag);
   }
-//To do: continue to change color from green to red when the timer starts
   return(
       <>
         <div className="container">

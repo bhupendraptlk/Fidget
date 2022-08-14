@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import plus from '../icons/plus.png';
+import minus from '../icons/minus.png';
 
 
 const Challenge = ()=>{
@@ -47,9 +49,9 @@ const Challenge = ()=>{
               <div className="challengeText">Let's see how many times you can click the button in {time} seconds</div>
                 <div className='challengeInner'>
                   <div className="setTimer">
-                    <button type="button" className={ notAllowed ? 'setTimerActive' : 'setTimerInactive' } onClick={()=>{ time>1 ? setTime(time-1) : setTime(time)}} disabled={!notAllowed}>-</button>
-                    <h4>{time} seconds</h4>
-                    <button type="button" className={ notAllowed ? 'setTimerActive' : 'setTimerInactive' } onClick={()=>{setTime(time+1)}} disabled={!notAllowed}>+</button>
+                    <button type="button" className={ notAllowed ? 'setTimerActive' : 'setTimerInactive' } onClick={()=>{ time>1 ? setTime(time-1) : setTime(time)}} disabled={!notAllowed}><img className="icon" src={minus}/></button>
+                    <h4 style={{fontWeight: "400"}}>{time} seconds</h4>
+                    <button type="button" className={ notAllowed ? 'setTimerActive' : 'setTimerInactive' } onClick={()=>{setTime(time+1)}} disabled={!notAllowed}><img className="icon" src={plus}/></button>
                   </div>
                   <div className='challengeSection'>
                     <button type="button" className= {notAllowed? 'readyBtnActive' : "readyBtnInactive"} onClick={challengeAccepted} onMouseOver={showToolTip} onMouseOut={removeToolTip} name="Ready" disabled={!notAllowed}>I am ready</button>

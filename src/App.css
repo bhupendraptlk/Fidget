@@ -2,6 +2,10 @@
     max-width: 1170px;
     margin: 0 auto;
 }
+.icon{
+    width:18px;
+    height:18px;
+}
 .challengeOuter{
     height: 100vh;
     display: flex;
@@ -190,9 +194,8 @@
         border: none;
         width: 55px;
     }
-}
-
-
-#sl li{
-    display: none;
+    .icon{
+        width:14px;
+        height:14px;
+    }
 }

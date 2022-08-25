@@ -67,6 +67,7 @@
     color: #19b648;
 }
 .clickBtnInactive{
+    border: none;
     padding: 18px;
     margin: 24px 0;
     background-color: rgb(226, 42, 42);
